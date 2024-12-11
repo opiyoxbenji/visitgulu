@@ -76,14 +76,14 @@ const Navbar = () => {
 	};
 
 	return (
-		<nav className='bg-orange-600 text-white sticky top-0 z-50 shadow-lg'>
+		<nav className='bg-[#283a2b] text-white sticky top-0 z-50 shadow-lg'>
 			<div className='container mx-auto flex justify-between items-center p-4'>
 				{/* Logo Section */}
 				<div
 					onClick={() => handleNavigation('/')}
-					className='flex items-center text-2xl font-bold hover:opacity-80 hover:text-yellow-300 transition cursor-pointer'>
+					className='flex items-center text-2xl font-bold hover:brightness-125 transition cursor-pointer'>
 					<MapPin className='mr-2' /> Visit
-					<span className='text-green-900'>Gulu</span>
+					<span className='text-yellow-300'>Gulu</span>
 				</div>
 
 				{/* Mobile Menu Toggle */}
