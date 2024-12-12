@@ -10,6 +10,7 @@ import {
 	Menu,
 	X,
 	Globe,
+	PenLine
 } from 'lucide-react';
 
 const Navbar = () => {
@@ -76,14 +77,14 @@ const Navbar = () => {
 	};
 
 	return (
-		<nav className='bg-[#283a2b] text-white sticky top-0 z-50 shadow-lg'>
+		<nav className='bg-[#f9ca00] text-white sticky top-0 z-50 shadow-lg p-4'>
 			<div className='container mx-auto flex justify-between items-center p-4'>
 				{/* Logo Section */}
 				<div
 					onClick={() => handleNavigation('/')}
 					className='flex items-center text-2xl font-bold hover:brightness-125 transition cursor-pointer'>
 					<MapPin className='mr-2' /> Visit
-					<span className='text-yellow-300'>Gulu</span>
+					<span className='text-[#B22222]'>Gulu</span>
 				</div>
 
 				{/* Mobile Menu Toggle */}
@@ -106,8 +107,13 @@ const Navbar = () => {
 					})}
 					<button
 						onClick={() => handleNavigation('/login')}
-						className='flex items-center bg-white text-purple-500 px-4 py-2 rounded-full hover:bg-gray-100 transition'>
+						className='flex items-center bg-white text-[#B22222] px-4 py-2 rounded-full hover:bg-[#A02020] hover:text-[#FFD700] transition'>
 						<User className='mr-2' /> Login
+					</button>
+					<button
+						onClick={() => handleNavigation('/signup')}
+						className='text-white bg-gray-800 hover:bg-[#A02020] inline-flex items-center justify-center px-4 py-2 border border-transparent text-sm font-medium rounded-full shadow-sm '>
+						<PenLine className='mr-2' /> Sign Up
 					</button>
 				</div>
 
