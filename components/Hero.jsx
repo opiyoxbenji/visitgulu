@@ -1,4 +1,4 @@
-"use client"
+'use client';
 
 import React from 'react';
 import { Hotel, Ticket, MapPin } from 'lucide-react';
@@ -11,14 +11,7 @@ const Hero = () => {
 	return (
 		<div className='relative h-[calc(100vh-80px)] w-full overflow-hidden'>
 			{/* Background Image */}
-			<div
-				className='absolute insert-0 bg-center filter brightness-50'
-				style={{
-					backgroundImage: "url('/assets/images/gulu.png')",
-					backgroundPosition: 'center',
-				}}
-			/>
-
+			
 			{/* Content */}
 			<div className='relative z-10 flex flex-col justify-center items-center h-full text-center px-4'>
 				<div className='bg-black/50 p-8 rounded-2xl max-w-2xl w-full'>

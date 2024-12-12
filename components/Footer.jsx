@@ -7,10 +7,12 @@ const Footer = () => {
 
 	return (
 		<footer className='bg-black text-white py-8 px-8'>
-			<div className='container mx-auto px-4 grid grid-cols-1 md:grid-cols-3 gap-8'>
+			<div className='container mx-auto  px-4 grid grid-cols-1 md:grid-cols-3 gap-8'>
 				{/* Company Info Column */}
 				<div>
-					<h3 className='text-xl font-bold mb-4'>VisitGulu</h3>
+					<h3 className='text-xl font-bold mb-4'>
+						Visit<span className='text-[#B22222]'>Gulu</span>
+					</h3>
 					<p className='text-gray-300'>
 						Explore the hidden gems of Northern Uganda. Your
 						adventure begins here with seamless travel experiences.
@@ -20,7 +22,9 @@ const Footer = () => {
 
 				{/* Quick Links Column */}
 				<div>
-					<h4 className='text-lg font-semibold mb-4'>Quick Links</h4>
+					<h4 className='text-lg font-semibold mb-4 text-[#B22222]'>
+						Quick Links
+					</h4>
 					<nav className='space-y-2'>
 						<Link
 							href='/'
@@ -47,7 +51,7 @@ const Footer = () => {
 
 				{/* Social Media Column */}
 				<div>
-					<h4 className='text-lg font-semibold mb-4'>
+					<h4 className='text-lg font-semibold mb-4 text-[#B22222]'>
 						Connect With Us
 					</h4>
 					<div className='flex space-x-4'>
@@ -55,25 +59,37 @@ const Footer = () => {
 							href='https://facebook.com'
 							target='_blank'
 							rel='noopener noreferrer'>
-							<TiSocialFacebook className='hover:text-blue-500 transition' size={30} />
+							<TiSocialFacebook
+								className='hover:text-blue-500 transition'
+								size={30}
+							/>
 						</Link>
 						<Link
 							href='https://x.com'
 							target='_blank'
 							rel='noopener noreferrer'>
-							<TiSocialTwitter className='hover:text-blue-400 transition' size={30} />
+							<TiSocialTwitter
+								className='hover:text-blue-400 transition'
+								size={30}
+							/>
 						</Link>
 						<Link
 							href='https://instagram.com'
 							target='_blank'
 							rel='noopener noreferrer'>
-							<TiSocialInstagram className='hover:text-pink-500 transition' size={30}/>
+							<TiSocialInstagram
+								className='hover:text-pink-500 transition'
+								size={30}
+							/>
 						</Link>
 						<Link
 							href='https://linkedin.com'
 							target='_blank'
 							rel='noopener noreferrer'>
-							<TiSocialLinkedin className='hover:text-blue-600 transition' size={30} />
+							<TiSocialLinkedin
+								className='hover:text-blue-600 transition'
+								size={30}
+							/>
 						</Link>
 					</div>
 				</div>

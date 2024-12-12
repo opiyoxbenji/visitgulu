@@ -7,6 +7,9 @@ export default {
 	],
 	theme: {
 		extend: {
+			backgroundImage: {
+				bannerImg: "url('/assets/images/banner-2.jpg')",
+			},
 			colors: {
 				customYellow: '#f3eee5',
 			},

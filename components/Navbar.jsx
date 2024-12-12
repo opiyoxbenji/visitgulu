@@ -10,7 +10,7 @@ import {
 	Menu,
 	X,
 	Globe,
-	PenLine
+	PenLine,
 } from 'lucide-react';
 
 const Navbar = () => {
@@ -77,12 +77,12 @@ const Navbar = () => {
 	};
 
 	return (
-		<nav className='bg-[#f9ca00] text-white sticky top-0 z-50 shadow-lg p-4'>
+		<nav className='bg-[#f9ca00] text-white sticky top-0 z-50 shadow-lg p-1'>
 			<div className='container mx-auto flex justify-between items-center p-4'>
 				{/* Logo Section */}
 				<div
 					onClick={() => handleNavigation('/')}
-					className='flex items-center text-2xl font-bold hover:brightness-125 transition cursor-pointer'>
+					className='flex items-center text-[30px] font-bold hover:brightness-125 transition cursor-pointer'>
 					<MapPin className='mr-2' /> Visit
 					<span className='text-[#B22222]'>Gulu</span>
 				</div>
