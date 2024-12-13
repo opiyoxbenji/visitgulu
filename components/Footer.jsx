@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import { Facebook, Twitter, Instagram, Linkedin } from 'lucide-react';
+// import { Facebook, Twitter, Instagram, Linkedin } from 'lucide-react';
 import { TiSocialFacebook, TiSocialTwitter, TiSocialInstagram, TiSocialLinkedin, TiSocialGithub } from 'react-icons/ti';
 
 const Footer = () => {
@@ -49,7 +49,7 @@ const Footer = () => {
 					</nav>
 				</div>
 
-				{/* Social Media Column */}
+				{/* Socials & Contacts Column */}
 				<div>
 					<h4 className='text-lg font-semibold mb-4 text-[#B22222]'>
 						Connect With Us
@@ -92,6 +92,7 @@ const Footer = () => {
 							/>
 						</Link>
 					</div>
+					
 				</div>
 			</div>
 

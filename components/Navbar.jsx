@@ -111,7 +111,7 @@ const Navbar = () => {
 						<User className='mr-2' /> Login
 					</button>
 					<button
-						onClick={() => handleNavigation('/signup')}
+						onClick={() => handleNavigation('/sign-up')}
 						className='text-white bg-gray-800 hover:bg-[#A02020] inline-flex items-center justify-center px-4 py-2 border border-transparent text-sm font-medium rounded-full shadow-sm '>
 						<PenLine className='mr-2' /> Sign Up
 					</button>
