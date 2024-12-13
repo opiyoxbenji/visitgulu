@@ -1,7 +1,8 @@
 'use client';
 
 import React from 'react';
-import { Hotel, Ticket, MapPin } from 'lucide-react';
+import { Hotel, Ticket, MapPin, Search, Star, Users, Play } from 'lucide-react';
+import FadeCarousel from './FadeCarousel';
 
 const Hero = () => {
 	const handleNavigation = path => {
@@ -9,54 +10,48 @@ const Hero = () => {
 	};
 
 	return (
-		<div className='relative h-[calc(100vh-80px)] w-full overflow-hidden'>
-			{/* Background Image */}
-			
-			{/* Content */}
-			<div className='relative z-10 flex flex-col justify-center items-center h-full text-center px-4'>
-				<div className='bg-black/50 p-8 rounded-2xl max-w-2xl w-full'>
-					<h1 className='text-5xl font-extrabold mb-4 text-[#030712]'>
-						Discover <span className='text-white'>Gulu</span>
-					</h1>
-
-					<p className='text-xl text-white mb-8 leading-relaxed'>
+		<section className='w-full  pt-12 sm:pt-16'>
+			<div className='px-4 mx-auto max-w-7xl sm:px-6 lg:px-8'>
+				<div className='text-center'>
+					<p className='max-w-4xl mx-auto mb-4 text-4xl font-bold leading-tight text-gray-900 sm:leading-tight sm:text-5xl lg:text-6xl lg:leading-tight'>
+						Discover <span className='text-[#B22222]'>Gulu</span>
+					</p>
+					<h1 className='max-w-2xl mx-auto px-6 text-lg text-gray-600 font-inter'>
 						Explore the hidden gems of Northern Uganda. Your
 						adventure begins here with seamless travel experiences.
-					</p>
-
-					{/* Action Buttons */}
-					<div className='flex justify-center space-x-4'>
+					</h1>
+					<div className='flex flex-col sm:flex-row justify-center items-center space-y-4 sm:space-y-0 sm:space-x-4 w-full px-4'>
 						<button
 							onClick={() => handleNavigation('/hotels')}
-							className='flex items-center bg-[#B22222] text-white px-6 py-3 rounded-full hover:bg-[#A02020] transition-colors'>
-							<Hotel className='mr-2' /> Check Hotels
+							className='w-full sm:w-auto flex items-center justify-center px-8 py-3 text-lg font-bold text-white bg-[#B22222] rounded-full hover:bg-[#000000] focus:ring-2 focus:ring-[#B22222] transition'>
+							<Hotel className='mr-2' />
+							Check Hotels
 						</button>
 
 						<button
 							onClick={() => handleNavigation('/tickets')}
-							className='flex items-center bg-[#FFD700] text-[#B22222] px-6 py-3 rounded-full hover:bg-[#FFC700] transition-colors'>
-							<Ticket className='mr-2' /> Get Ticket
+							className='w-full sm:w-auto flex items-center justify-center px-8 py-3 text-lg font-bold text-[#B22222] bg-[#FFD700] rounded-full hover:bg-[#FFC700] hover:text-black focus:ring-2 focus:ring-[#FFD700] transition'>
+							<Ticket className='mr-2' />
+							Get a Ticket
 						</button>
-					</div>
-
-					{/* Quick Facts */}
-					<div className='mt-8 grid grid-cols-3 gap-4 text-white'>
-						<div className='flex flex-col items-center'>
-							<MapPin className='text-[#FFD700] mb-2' size={32} />
-							<span className='font-bold'>30+ Destinations</span>
-						</div>
-						<div className='flex flex-col items-center'>
-							<Hotel className='text-[#FFD700] mb-2' size={32} />
-							<span className='font-bold'>100+ Hotels</span>
-						</div>
-						<div className='flex flex-col items-center'>
-							<Ticket className='text-[#FFD700] mb-2' size={32} />
-							<span className='font-bold'>Instant Booking</span>
-						</div>
 					</div>
 				</div>
 			</div>
-		</div>
+
+			<div>
+				<div className='relative mx-auto mt-4 md:mt-8 px-4 md:px-8 w-full'>
+					<div className='lg:max-w-4xl lg:mx-auto'>
+						{/* <img
+							src='https://plus.unsplash.com/premium_photo-1687960116497-0dc41e1808a2?q=80&w=871&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'
+							alt='Hero image'
+							className='w-full h-auto object-cover rounded-lg shadow-lg'
+						/> */}
+
+						<FadeCarousel className='w-full h-auto object-cover rounded-lg shadow-lg' />
+					</div>
+				</div>
+			</div>
+		</section>
 	);
 };
 
