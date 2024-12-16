@@ -1,4 +1,6 @@
-import React from 'react'
+'use client'
+
+import Link from "next/link";
 
 const Login = () => {
   return (
@@ -9,4 +11,3 @@ const Login = () => {
 }
 
 export default Login
- 
