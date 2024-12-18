@@ -7,7 +7,7 @@ const Error = ({
 	error,
 	reset,
 	message = "The page you're looking for seems to have gone on a little adventure.",
-	errorCode = '500',
+	errorCode = '404',
 }) => {
 	// Log the error to an error reporting service
 	React.useEffect(() => {
