@@ -58,6 +58,9 @@ const FadeCarousel = () => {
 
 	return (
 		// Fade in Carousel Styling and Functionality
+
+		// FIX THE IMAGE SIZE
+
 		<div className='w-full max-w-xl mx-auto shadow-lg rounded-xl overflow-hidden'>
 			<Slider {...settings}>
 				{carouselItems.map((item, index) => (

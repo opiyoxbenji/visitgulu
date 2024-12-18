@@ -1,7 +1,17 @@
 'use client';
 
 import React from 'react';
-import { Hotel, Ticket, MapPin, Search, Star, Users, Play } from 'lucide-react';
+import {
+	Hotel,
+	Ticket,
+	MapPin,
+	Globe,
+	Search,
+	Calendar,
+	Users,
+	Plane,
+	ChevronRight,
+} from 'lucide-react';
 import FadeCarousel from './FadeCarousel';
 
 const Hero = () => {
@@ -10,6 +20,7 @@ const Hero = () => {
 	};
 
 	return (
+		// Hero Section
 		<section className='w-full  pt-12 sm:pt-16'>
 			<div className='px-4 mx-auto max-w-7xl sm:px-6 lg:px-8 '>
 				
@@ -21,7 +32,7 @@ const Hero = () => {
 						Explore the hidden gems of Northern Uganda. Your
 						adventure begins here with seamless travel experiences.
 					</h1>
-					<div className='flex flex-col sm:flex-row justify-center items-center space-y-4 sm:space-y-0 sm:space-x-4 w-full px-4'>
+					<div className='flex flex-col sm:flex-row justify-center items-center space-y-4 sm:space-y-0 sm:space-x-4 w-full px-4 mt-4'>
 						<button
 							onClick={() => handleNavigation('/hotelBooking')}
 							className='w-full sm:w-auto flex items-center justify-center px-8 py-3 text-lg font-bold text-white bg-[#B22222] rounded-full hover:bg-[#000000] focus:ring-2 focus:ring-[#B22222] transition'>
@@ -49,6 +60,9 @@ const Hero = () => {
 				</div>
 			</div>
 		</section>
+
+		// Landing page
+
 	);
 };
 

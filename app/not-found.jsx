@@ -18,7 +18,7 @@ const Error = ({
 
 	return (
 		<div
-			className='flex items-center justify-center min-h-screen bg-cover bg-center bg-no-repeat'
+			className='flex items-center justify-center min-h-screen bg-cover bg-center bg-no-repeat mt-4 rounded-lg'
 			style={{
 				backgroundImage:
 					"url('https://images.unsplash.com/photo-1496398766793-e7528d18007d?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')",
@@ -52,7 +52,7 @@ const Error = ({
 
 					<Link
 						href='/'
-						className='inline-block bg-gray-200 text-gray-800 font-semibold px-6 py-3 rounded-md hover:bg-gray-300 transition-colors duration-300'>
+						className='inline-block bg-gray-200 text-gray-800 font-semibold px-6 py-3 rounded-md hover:bg-indigo-600 hover:text-white transition-colors duration-300'>
 						Go Back Home
 					</Link>
 				</div>
