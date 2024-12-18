@@ -15,7 +15,7 @@ const Hero = () => {
 				
 				<div className='text-center'>
 					<p className='max-w-4xl mx-auto mb-4 text-4xl font-bold leading-tight text-gray-900 sm:leading-tight sm:text-5xl lg:text-6xl lg:leading-tight'>
-						Discover <span className='text-[#B22222]'>Gulu</span>
+						Find your next stay in <span className='text-[#B22222]'>Gulu</span>
 					</p>
 					<h1 className='max-w-2xl mx-auto px-6 text-lg text-gray-600 font-inter'>
 						Explore the hidden gems of Northern Uganda. Your
