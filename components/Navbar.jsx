@@ -77,7 +77,7 @@ const Navbar = () => {
 	};
 
 	return (
-		<nav className='bg-[#f9ca00] text-white sticky top-0 z-50 shadow-lg p-1'>
+		<nav className='bg-[#f9ca00] text-white sticky top-0 z-50 shadow-lg p-2 md:p-4'>
 			<div className='container mx-auto flex justify-between items-center p-4'>
 				{/* Logo Section */}
 				<div
