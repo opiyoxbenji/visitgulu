@@ -11,7 +11,7 @@ const Hero = () => {
 
 	return (
 		<section className='w-full  pt-12 sm:pt-16'>
-			<div className='px-4 mx-auto max-w-7xl sm:px-6 lg:px-8'>
+			<div className='px-4 mx-auto max-w-7xl sm:px-6 lg:px-8 '>
 				<div className='text-center'>
 					<p className='max-w-4xl mx-auto mb-4 text-4xl font-bold leading-tight text-gray-900 sm:leading-tight sm:text-5xl lg:text-6xl lg:leading-tight'>
 						Discover <span className='text-[#B22222]'>Gulu</span>
@@ -41,11 +41,7 @@ const Hero = () => {
 			<div>
 				<div className='relative mx-auto mt-4 md:mt-8 px-4 md:px-8 w-full'>
 					<div className='lg:max-w-4xl lg:mx-auto'>
-						{/* <img
-							src='https://plus.unsplash.com/premium_photo-1687960116497-0dc41e1808a2?q=80&w=871&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'
-							alt='Hero image'
-							className='w-full h-auto object-cover rounded-lg shadow-lg'
-						/> */}
+						
 
 						<FadeCarousel className='w-full h-auto object-cover rounded-lg shadow-lg' />
 					</div>
