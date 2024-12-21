@@ -94,7 +94,7 @@ const Login = () => {
 				{/* Image Section */}
 				<div className='hidden md:flex'>
 					<img
-						src='https://images.unsplash.com/photo-1466554934129-f71df54ebb27?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'
+						src='https://images.unsplash.com/photo-1660675134062-7d3bbb340608?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'
 						alt='Background'
 						className='rounded-3xl object-cover'
 					/>
