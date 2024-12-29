@@ -1,5 +1,10 @@
 {
   "compilerOptions": {
+    "paths": {
+      "@/*": [
+        "./*"
+      ]
+    },
     "target": "ES2017",
     "lib": [
       "dom",
@@ -28,7 +33,7 @@
     ".next/types/**/*.ts",
     "**/*.ts",
     "**/*.tsx"
-, "app/hotelBooking/page.jsx", "app/ticketBooking/page.jsx"  ],
+, "app/hotelBooking/page", "app/ticketBooking/page.jsx"  ],
   "exclude": [
     "node_modules"
   ]
