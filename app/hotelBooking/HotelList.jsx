@@ -1,16 +1,18 @@
-import React from 'react'
+import React from 'react';
 
-// fetching data 
+import Image from 'next/image';
+
+// fetching data
 async function getHotels() {
-  const res = await fetch('http://localhost:4000/hotels');
-  
-  return res.json()
+	const res = await fetch('http://localhost:4000/hotels');
+
+	return res.json();
 }
 
-export default async function hotelList() {
-  const hotels = await getHotels()
+export default async function HotelList() {
+	const hotels = await getHotels();
 
-  return (
+	return (
 		<>
 			<div className='container mx-auto p-6'>
 				<h1 className='text-3xl font-bold mb-8 text-center'>
@@ -87,5 +89,5 @@ export default async function hotelList() {
 				</div>
 			</div>
 		</>
-  );
+	);
 }
