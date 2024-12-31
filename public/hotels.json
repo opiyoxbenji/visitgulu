@@ -1,0 +1,572 @@
+{
+	"hotels": [
+		{
+			"id": "GR001",
+			"name": "The Grand Royal Palace",
+			"location": {
+				"city": "Dubai",
+				"country": "UAE",
+				"address": "1 Palm Jumeirah",
+				"coordinates": {
+					"latitude": 25.1124,
+					"longitude": 55.139
+				}
+			},
+			"rating": 5,
+			"priceRange": "$$$$",
+			"images": [
+				"https://images.unsplash.com/photo-1570206986634-afd7cccb68d3?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+			],
+			"description": "An opulent beachfront resort featuring stunning Arabian architecture and spectacular views of the Persian Gulf. Each room offers a private balcony and luxury amenities.",
+			"uniqueServices": [
+				"Underwater restaurant with 180-degree aquarium views",
+				"Private helicopter transfers",
+				"Personal butler service 24/7"
+			],
+			"amenities": [
+				"Spa",
+				"Multiple pools",
+				"Fine dining",
+				"Private beach",
+				"Fitness center"
+			],
+			"rooms": {
+				"total": 400,
+				"types": [
+					{
+						"name": "Deluxe Room",
+						"pricePerNight": 800,
+						"size": "45m²"
+					},
+					{
+						"name": "Royal Suite",
+						"pricePerNight": 3500,
+						"size": "200m²"
+					}
+				]
+			}
+		},
+		{
+			"id": "MR002",
+			"name": "Mountain Ridge Resort",
+			"location": {
+				"city": "Aspen",
+				"country": "USA",
+				"address": "340 Mountain View Drive",
+				"coordinates": {
+					"latitude": 39.1911,
+					"longitude": -106.8175
+				}
+			},
+			"rating": 5,
+			"priceRange": "$$$$",
+			"images": [
+        "https://images.unsplash.com/photo-1718606267789-de728d02f064?q=80&w=1009&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+      ],
+			"description": "A luxurious mountain retreat offering world-class skiing facilities and breathtaking views of the Rockies. Features rustic-chic decor with modern amenities.",
+			"uniqueServices": [
+				"Private ski instructor and gear fitting",
+				"Helicopter skiing packages",
+				"On-site ski manufacturing and customization"
+			],
+			"amenities": [
+				"Ski-in/ski-out access",
+				"Hot tubs",
+				"Spa",
+				"Restaurant",
+				"Bar"
+			],
+			"rooms": {
+				"total": 150,
+				"types": [
+					{
+						"name": "Mountain View Room",
+						"pricePerNight": 600,
+						"size": "40m²"
+					},
+					{
+						"name": "Chalet Suite",
+						"pricePerNight": 2000,
+						"size": "120m²"
+					}
+				]
+			}
+		},
+		{
+			"id": "TR003",
+			"name": "Tropical Rainforest Eco-Lodge",
+			"location": {
+				"city": "Puerto Viejo",
+				"country": "Costa Rica",
+				"address": "Rainforest Road 123",
+				"coordinates": {
+					"latitude": 9.6542,
+					"longitude": -82.7549
+				}
+			},
+			"rating": 4,
+			"priceRange": "$$$",
+			"images": ["https://images.unsplash.com/photo-1581041778541-1ac1b92728a4?w=300&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OTh8fGNvc3RhJTIwcmljYXxlbnwwfHwwfHx8MA%3D%3D"],
+			"description": "An eco-friendly paradise nestled in the rainforest canopy, offering sustainable luxury and unique wildlife experiences. Each treehouse suite is crafted from local materials.",
+			"uniqueServices": [
+				"Canopy wildlife observation platforms",
+				"Night jungle safaris with infrared equipment",
+				"Indigenous culture immersion programs"
+			],
+			"amenities": [
+				"Organic restaurant",
+				"Yoga platform",
+				"Natural pool",
+				"Guided tours",
+				"Wellness center"
+			],
+			"rooms": {
+				"total": 30,
+				"types": [
+					{
+						"name": "Treehouse Suite",
+						"pricePerNight": 400,
+						"size": "35m²"
+					},
+					{
+						"name": "Canopy Villa",
+						"pricePerNight": 800,
+						"size": "75m²"
+					}
+				]
+			}
+		},
+		{
+			"id": "BB004",
+			"name": "Blue Bay Resort",
+			"location": {
+				"city": "Maldives",
+				"country": "Maldives",
+				"address": "Baa Atoll",
+				"coordinates": {
+					"latitude": 5.2027,
+					"longitude": 73.2207
+				}
+			},
+			"rating": 5,
+			"priceRange": "$$$$",
+			"images": ["https://images.unsplash.com/photo-1544550581-1bb7e9a211e6?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"],
+			"description": "Luxurious overwater villas with glass floors, offering direct access to pristine coral reefs and turquoise waters.",
+			"amenities": [
+				"Water sports",
+				"Spa",
+				"Multiple restaurants",
+				"Diving center",
+				"Kids club"
+			],
+			"rooms": {
+				"total": 80,
+				"types": [
+					{
+						"name": "Water Villa",
+						"pricePerNight": 1200,
+						"size": "85m²"
+					},
+					{
+						"name": "Beach Villa",
+						"pricePerNight": 900,
+						"size": "95m²"
+					}
+				]
+			}
+		},
+		{
+			"id": "CP005",
+			"name": "City Park Hotel",
+			"location": {
+				"city": "New York",
+				"country": "USA",
+				"address": "432 Park Avenue",
+				"coordinates": {
+					"latitude": 40.7614,
+					"longitude": -73.9776
+				}
+			},
+			"rating": 4,
+			"priceRange": "$$$",
+			"images": ["https://images.unsplash.com/photo-1541717141198-78d0af021490?q=80&w=987&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"],
+			"description": "Modern luxury hotel in the heart of Manhattan, offering stunning city views and sophisticated urban comfort.",
+			"amenities": [
+				"Restaurant",
+				"Bar",
+				"Fitness center",
+				"Business center",
+				"Concierge"
+			],
+			"rooms": {
+				"total": 300,
+				"types": [
+					{
+						"name": "City View Room",
+						"pricePerNight": 450,
+						"size": "35m²"
+					},
+					{
+						"name": "Executive Suite",
+						"pricePerNight": 850,
+						"size": "70m²"
+					}
+				]
+			}
+		},
+		{
+			"id": "DH006",
+			"name": "Desert Horizon Hotel",
+			"location": {
+				"city": "Marrakech",
+				"country": "Morocco",
+				"address": "123 Medina Road",
+				"coordinates": {
+					"latitude": 31.6295,
+					"longitude": -7.9811
+				}
+			},
+			"rating": 4,
+			"priceRange": "$$$",
+			"images": ["https://images.unsplash.com/photo-1538600838042-6a0c694ffab5?q=80&w=1035&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"],
+			"description": "Traditional Moroccan riad with modern amenities, featuring authentic architecture and a peaceful courtyard garden.",
+			"amenities": [
+				"Hammam",
+				"Rooftop terrace",
+				"Restaurant",
+				"Pool",
+				"Spa"
+			],
+			"rooms": {
+				"total": 50,
+				"types": [
+					{
+						"name": "Traditional Room",
+						"pricePerNight": 300,
+						"size": "30m²"
+					},
+					{
+						"name": "Royal Suite",
+						"pricePerNight": 600,
+						"size": "60m²"
+					}
+				]
+			}
+		},
+		{
+			"id": "VL007",
+			"name": "Vineyard Lodge",
+			"location": {
+				"city": "Bordeaux",
+				"country": "France",
+				"address": "789 Route du Vin",
+				"coordinates": {
+					"latitude": 44.8378,
+					"longitude": -0.5792
+				}
+			},
+			"rating": 4,
+			"priceRange": "$$$",
+			"images": ["https://images.unsplash.com/photo-1616091216791-a5360b5fc78a?q=80&w=995&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"],
+			"description": "Charming château surrounded by vineyards, offering wine tasting experiences and gourmet cuisine.",
+			"amenities": [
+				"Wine cellar",
+				"Restaurant",
+				"Pool",
+				"Bicycle rental",
+				"Spa"
+			],
+			"rooms": {
+				"total": 40,
+				"types": [
+					{
+						"name": "Vineyard Room",
+						"pricePerNight": 350,
+						"size": "35m²"
+					},
+					{
+						"name": "Château Suite",
+						"pricePerNight": 700,
+						"size": "75m²"
+					}
+				]
+			}
+		},
+		{
+			"id": "NH008",
+			"name": "Northern Lights Hotel",
+			"location": {
+				"city": "Tromsø",
+				"country": "Norway",
+				"address": "456 Aurora Street",
+				"coordinates": {
+					"latitude": 69.6492,
+					"longitude": 18.9553
+				}
+			},
+			"rating": 4,
+			"priceRange": "$$$$",
+			"images": [
+        "https://plus.unsplash.com/premium_photo-1698405316329-fd9c43d7e11c?q=80&w=987&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+      ],
+			"description": "Glass-roofed igloo hotel offering perfect views of the Northern Lights and Arctic wilderness.",
+			"amenities": [
+				"Glass igloos",
+				"Restaurant",
+				"Aurora alarm",
+				"Sauna",
+				"Winter activities"
+			],
+			"rooms": {
+				"total": 60,
+				"types": [
+					{
+						"name": "Glass Igloo",
+						"pricePerNight": 800,
+						"size": "25m²"
+					},
+					{
+						"name": "Arctic Suite",
+						"pricePerNight": 1200,
+						"size": "50m²"
+					}
+				]
+			}
+		},
+		{
+			"id": "BH009",
+			"name": "Beachfront Haven",
+			"location": {
+				"city": "Bali",
+				"country": "Indonesia",
+				"address": "Jimbaran Beach Road",
+				"coordinates": {
+					"latitude": -8.7891,
+					"longitude": 115.1682
+				}
+			},
+			"rating": 5,
+			"priceRange": "$$$$",
+			"images": ["https://plus.unsplash.com/premium_photo-1677829177639-28be8d494543?q=80&w=987&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"],
+			"description": "Luxury beachfront resort with traditional Balinese architecture and world-class spa facilities.",
+			"amenities": [
+				"Private beach",
+				"Spa",
+				"Multiple pools",
+				"Water sports",
+				"Yoga classes"
+			],
+			"rooms": {
+				"total": 200,
+				"types": [
+					{
+						"name": "Garden View",
+						"pricePerNight": 400,
+						"size": "45m²"
+					},
+					{
+						"name": "Beach Villa",
+						"pricePerNight": 900,
+						"size": "120m²"
+					}
+				]
+			}
+		},
+		{
+			"id": "UH010",
+			"name": "Urban Heights",
+			"location": {
+				"city": "Tokyo",
+				"country": "Japan",
+				"address": "1-1 Shibuya",
+				"coordinates": {
+					"latitude": 35.6762,
+					"longitude": 139.6503
+				}
+			},
+			"rating": 5,
+			"priceRange": "$$$$",
+			"images": ["https://images.unsplash.com/photo-1559245718-212fba2d22e2?q=80&w=987&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"],
+			"description": "Ultra-modern high-rise hotel with cutting-edge technology and spectacular city views.",
+			"amenities": [
+				"Rooftop bar",
+				"Smart rooms",
+				"Restaurant",
+				"Spa",
+				"Gym"
+			],
+			"rooms": {
+				"total": 250,
+				"types": [
+					{
+						"name": "Sky Room",
+						"pricePerNight": 500,
+						"size": "40m²"
+					},
+					{
+						"name": "Premium Suite",
+						"pricePerNight": 1100,
+						"size": "85m²"
+					}
+				]
+			}
+		},
+		{
+			"id": "HR011",
+			"name": "Historic Residence",
+			"location": {
+				"city": "Rome",
+				"country": "Italy",
+				"address": "Via del Corso 123",
+				"coordinates": {
+					"latitude": 41.9028,
+					"longitude": 12.4964
+				}
+			},
+			"rating": 4,
+			"priceRange": "$$$",
+			"images": ["https://images.unsplash.com/photo-1536140012599-830a641c27e6?q=80&w=1035&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"],
+			"description": "Converted 16th-century palazzo in the heart of Rome, combining historical elegance with modern comfort.",
+			"amenities": [
+				"Rooftop restaurant",
+				"Wine bar",
+				"Courtyard",
+				"Concierge",
+				"Art collection"
+			],
+			"rooms": {
+				"total": 70,
+				"types": [
+					{
+						"name": "Classic Room",
+						"pricePerNight": 350,
+						"size": "30m²"
+					},
+					{
+						"name": "Heritage Suite",
+						"pricePerNight": 700,
+						"size": "65m²"
+					}
+				]
+			}
+		},
+		{
+			"id": "LR012",
+			"name": "Lakeside Retreat",
+			"location": {
+				"city": "Lake Como",
+				"country": "Italy",
+				"address": "Via Lago 45",
+				"coordinates": {
+					"latitude": 45.9937,
+					"longitude": 9.2706
+				}
+			},
+			"rating": 5,
+			"priceRange": "$$$$",
+			"images": ["https://images.unsplash.com/photo-1553342385-111fd6bc6ab3?q=80&w=1035&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"],
+			"description": "Elegant lakeside hotel with private dock and stunning mountain views, set in historic gardens.",
+			"amenities": [
+				"Lake access",
+				"Boat rental",
+				"Restaurant",
+				"Spa",
+				"Tennis courts"
+			],
+			"rooms": {
+				"total": 90,
+				"types": [
+					{
+						"name": "Lake View Room",
+						"pricePerNight": 600,
+						"size": "40m²"
+					},
+					{
+						"name": "Presidential Suite",
+						"pricePerNight": 2500,
+						"size": "150m²"
+					}
+				]
+			}
+		},
+		{
+			"id": "SR013",
+			"name": "Safari Resort",
+			"location": {
+				"city": "Kruger National Park",
+				"country": "South Africa",
+				"address": "Safari Road 1",
+				"coordinates": {
+					"latitude": -23.9884,
+					"longitude": 31.5547
+				}
+			},
+			"rating": 5,
+			"priceRange": "$$$$",
+			"images": ["https://images.unsplash.com/photo-1503427948460-3ca3eb79c566?q=80&w=987&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"],
+			"description": "Luxury tented camp offering intimate wildlife experiences and premium safari services.",
+			"amenities": [
+				"Game drives",
+				"Pool",
+				"Restaurant",
+				"Observation deck",
+				"Spa"
+			],
+			"rooms": {
+				"total": 20,
+				"types": [
+					{
+						"name": "Luxury Tent",
+						"pricePerNight": 900,
+						"size": "55m²"
+					},
+					{
+						"name": "Family Tent",
+						"pricePerNight": 1500,
+						"size": "100m²"
+					}
+				]
+			}
+		},
+		{
+			"id": "PH014",
+			"name": "Penthouse Hotel",
+			"location": {
+				"city": "Singapore",
+				"country": "Singapore",
+				"address": "1 Marina Bay",
+				"coordinates": {
+					"latitude": 1.2834,
+					"longitude": 103.8607
+				}
+			},
+			"rating": 5,
+			"priceRange": "$$$$",
+			"images": ["https://images.unsplash.com/photo-1505230960573-7dbc536e8346?q=80&w=1064&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"],
+			"description": "Sleek luxury hotel occupying the top floors of a iconic skyscraper with panoramic city views.",
+			"amenities": [
+				"Bar",
+				"Diving center",
+				"Guided tours",
+				"Fitness center",
+				"Multiple restaurants",
+				"Bicycle rental"
+			],
+			"rooms": {
+				"total": 70,
+				"types": [
+					{
+						"name": "Movie Room",
+						"pricePerNight": 250,
+						"size": "40m²"
+					},
+					{
+						"name": "Masters Suite",
+						"pricePerNight": 500,
+						"size": "55m²"
+					}
+				]
+			}
+		}
+	]
+}
