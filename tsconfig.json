@@ -33,7 +33,7 @@
     ".next/types/**/*.ts",
     "**/*.ts",
     "**/*.tsx"
-, "app/hotelBooking/page", "app/ticketBooking/page.jsx"  ],
+, "app/hotels/page", "app/tickets/page.jsx"  ],
   "exclude": [
     "node_modules"
   ]

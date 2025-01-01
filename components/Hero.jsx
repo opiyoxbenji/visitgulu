@@ -34,14 +34,14 @@ const Hero = () => {
 					</h1>
 					<div className='flex flex-col sm:flex-row justify-center items-center space-y-4 sm:space-y-0 sm:space-x-4 w-full px-4 mt-4'>
 						<button
-							onClick={() => handleNavigation('/hotelBooking')}
+							onClick={() => handleNavigation('/hotels')}
 							className='w-full sm:w-auto flex items-center justify-center px-8 py-3 text-lg font-bold text-white bg-[#B22222] rounded-full hover:bg-[#000000] focus:ring-2 focus:ring-[#B22222] transition'>
 							<Hotel className='mr-2' />
 							Check Hotels
 						</button>
 
 						<button
-							onClick={() => handleNavigation('/ticketBooking')}
+							onClick={() => handleNavigation('/tickets')}
 							className='w-full sm:w-auto flex items-center justify-center px-8 py-3 text-lg font-bold text-[#B22222] bg-[#FFD700] rounded-full hover:bg-[#FFC700] hover:text-black focus:ring-2 focus:ring-[#FFD700] transition'>
 							<Ticket className='mr-2' />
 							Get a Ticket

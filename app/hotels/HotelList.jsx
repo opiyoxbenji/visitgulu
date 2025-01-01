@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import Image from 'next/image';
+import Link from 'next/link';
 
 // fetching data
 async function getHotels() {
@@ -10,10 +11,6 @@ async function getHotels() {
 export default function HotelList() {
 	const [hotels, setHotels] = useState([]);
 	const [isLoading, setIsLoading] = useState(true);
-
-	const handleNavigation = path => {
-		window.location.href = path;
-	};
 
 	// Fetch hotels data
 	useEffect(() => {
@@ -105,9 +102,11 @@ export default function HotelList() {
 								<span className='text-gray-800 font-medium'>
 									{hotel.priceRange}
 								</span>
-								<button className='px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-orange-700 hover:text-black  transition-colors duration-300'>
-									View Details
-								</button>
+								<Link href={`/hotels/${hotel.id}`}>
+									<button className='px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-orange-700 hover:text-black transition-colors duration-300'>
+										View Details
+									</button>
+								</Link>
 							</div>
 						</div>
 					</div>
