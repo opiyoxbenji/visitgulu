@@ -13,6 +13,7 @@ export default {
 			},
 			colors: {
 				customYellow: '#f3eee5',
+				customCream: '#fffccf',
 			},
 		},
 	},
