@@ -1,202 +1,259 @@
-import React from 'react'
+'use client'
 
-const page = () => {
-  return (
-		<section class='bg-blue-50 dark:bg-slate-800' id='contact '>
-			<div class='mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:px-8 lg:py-20'>
-				<div class='mb-4'>
-					<div class='mb-6 max-w-3xl text-center md:mx-auto md:mb-12'>
-						<p class='text-base font-semibold uppercase tracking-wide text-blue-600 dark:text-blue-200'>
-							Contact Us
-						</p>
-						<h2 class='font-heading mb-4 font-bold tracking-tight text-gray-900 dark:text-white text-3xl sm:text-5xl'>
-							Let's Connect
-						</h2>
-						<p class='mx-auto mt-4 max-w-3xl text-xl text-gray-600 dark:text-slate-400'>
-							We're here to help and answer any questions you
-							might have. We look forward to hearing from you!
-						</p>
-					</div>
-				</div>
-				<div class='flex items-stretch justify-center'>
-					<div class='grid md:grid-cols-2 gap-8'>
-						<div class='h-full pr-6'>
-							<p class='mt-3 mb-12 text-lg text-gray-600 dark:text-slate-400'>
-								Our team is dedicated to providing exceptional
-								support. Whether you have a question,
-								suggestion, or just want to say hello, we're
-								always ready to listen and help.
-							</p>
-							<ul class='space-y-6'>
-								<li class='flex items-start space-x-4'>
-									<div class='flex h-12 w-12 items-center justify-center rounded-full bg-blue-900 text-gray-50 flex-shrink-0'>
-										<svg
-											xmlns='http://www.w3.org/2000/svg'
-											class='h-6 w-6'
-											fill='none'
-											viewBox='0 0 24 24'
-											stroke='currentColor'>
-											<path
-												stroke-linecap='round'
-												stroke-linejoin='round'
-												stroke-width='2'
-												d='M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z'
-											/>
-											<path
-												stroke-linecap='round'
-												stroke-linejoin='round'
-												stroke-width='2'
-												d='M15 11a3 3 0 11-6 0 3 3 0 016 0z'
-											/>
-										</svg>
-									</div>
-									<div>
-										<h3 class='text-lg font-semibold text-gray-900 dark:text-white'>
-											Our Address
-										</h3>
-										<address class='not-italic text-gray-600 dark:text-slate-400'>
-											Queens Avenue Road
-											<br />
-											Gulu, Uganda
-										</address>
-									</div>
-								</li>
-								<li class='flex items-start space-x-4'>
-									<div class='flex h-12 w-12 items-center justify-center rounded-full bg-blue-900 text-gray-50 flex-shrink-0'>
-										<svg
-											xmlns='http://www.w3.org/2000/svg'
-											class='h-6 w-6'
-											fill='none'
-											viewBox='0 0 24 24'
-											stroke='currentColor'>
-											<path
-												stroke-linecap='round'
-												stroke-linejoin='round'
-												stroke-width='2'
-												d='M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1c-8.284 0-15-6.716-15-15V5z'
-											/>
-										</svg>
-									</div>
-									<div>
-										<h3 class='text-lg font-semibold text-gray-900 dark:text-white'>
-											Contact
-										</h3>
-										<div class='text-gray-600 dark:text-slate-400'>
-											<p>
-												Phone:{' '}
-												<a
-													href='tel:+11234567890'
-													class='hover:text-blue-600 transition-colors'>
-													+256 (777) 456-7890
-												</a>
-											</p>
-											<p>
-												Email:{' '}
-												<a
-													href='mailto:support@company.com'
-													class='hover:text-blue-600 transition-colors'>
-													support@company.com
-												</a>
-											</p>
-										</div>
-									</div>
-								</li>
-								<li class='flex items-start space-x-4'>
-									<div class='flex h-12 w-12 items-center justify-center rounded-full bg-blue-900 text-gray-50 flex-shrink-0'>
-										<svg
-											xmlns='http://www.w3.org/2000/svg'
-											class='h-6 w-6'
-											fill='none'
-											viewBox='0 0 24 24'
-											stroke='currentColor'>
-											<path
-												stroke-linecap='round'
-												stroke-linejoin='round'
-												stroke-width='2'
-												d='M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z'
-											/>
-										</svg>
-									</div>
-									<div>
-										<h3 class='text-lg font-semibold text-gray-900 dark:text-white'>
-											Working Hours
-										</h3>
-										<p class='text-gray-600 dark:text-slate-400'>
-											Monday - Friday: 08:00 - 17:00
-											<br />
-											Saturday &amp; Sunday: 08:00 - 12:00
-										</p>
-									</div>
-								</li>
-							</ul>
-						</div>
-						<div class='card h-fit max-w-6xl p-5 md:p-12 bg-white dark:bg-slate-700 rounded-lg shadow-lg'>
-							<h2 class='mb-6 text-2xl font-bold text-gray-900 dark:text-white'>
-								Ready to Get Started?
-							</h2>
-							<form id='contactForm' class='space-y-6'>
-								<div class='grid grid-cols-1 gap-6'>
-									<div>
-										<label
-											for='name'
-											class='block mb-2 text-sm font-medium text-gray-700 dark:text-gray-300'>
-											Full Name
-										</label>
-										<input
-											type='text'
-											id='name'
-											name='name'
-											required
-											autocomplete='name'
-											placeholder='Enter your full name'
-											class='block w-full px-4 py-3 rounded-md border border-gray-300 dark:border-gray-600 focus:ring-2 focus:ring-blue-500 focus:outline-none dark:bg-slate-800 dark:text-white'
-										/>
-									</div>
-									<div>
-										<label
-											for='email'
-											class='block mb-2 text-sm font-medium text-gray-700 dark:text-gray-300'>
-											Email Address
-										</label>
-										<input
-											type='email'
-											id='email'
-											name='email'
-											required
-											autocomplete='email'
-											placeholder='Enter your email address'
-											class='block w-full px-4 py-3 rounded-md border border-gray-300 dark:border-gray-600 focus:ring-2 focus:ring-blue-500 focus:outline-none dark:bg-slate-800 dark:text-white'
-										/>
-									</div>
-									<div>
-										<label
-											for='message'
-											class='block mb-2 text-sm font-medium text-gray-700 dark:text-gray-300'>
-											Your Message
-										</label>
-										<textarea
-											id='message'
-											name='message'
-											rows='5'
-											required
-											placeholder='Write your message here...'
-											class='block w-full px-4 py-3 rounded-md border border-gray-300 dark:border-gray-600 focus:ring-2 focus:ring-blue-500 focus:outline-none dark:bg-slate-800 dark:text-white'></textarea>
-									</div>
-								</div>
-								<div>
-									<button
-										type='submit'
-										class='w-full py-3 px-6 bg-blue-600 text-white font-semibold rounded-md hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 transition-colors duration-300'>
-										Send Message
-									</button>
-								</div>
-							</form>
-						</div>
-					</div>
+import React, { useState } from 'react';
+import { MapPin, Phone, Mail, Clock, MessageCircle, Globe } from 'lucide-react';
+
+const contactMethods = [
+	{
+		icon: Phone,
+		title: 'Call Us',
+		details: ['+1 (555) 123-4567', '+1 (555) 765-4321'],
+		actionText: 'Call now',
+	},
+	{
+		icon: Mail,
+		title: 'Email Us',
+		details: ['reservations@luxuryhotels.com', 'support@luxuryhotels.com'],
+		actionText: 'Send email',
+	},
+	{
+		icon: MapPin,
+		title: 'Visit Us',
+		details: ['123 Luxury Avenue', 'New York, NY 10001'],
+		actionText: 'Get directions',
+	},
+];
+
+export default function ContactPage() {
+	const [formData, setFormData] = useState({
+		name: '',
+		email: '',
+		phone: '',
+		subject: '',
+		message: '',
+	});
+	const [isSubmitting, setIsSubmitting] = useState(false);
+	const [submitMessage, setSubmitMessage] = useState('');
+
+	const handleChange = e => {
+		const { name, value } = e.target;
+		setFormData(prev => ({
+			...prev,
+			[name]: value,
+		}));
+	};
+
+	const handleSubmit = async e => {
+		e.preventDefault();
+		setIsSubmitting(true);
+		setSubmitMessage('');
+
+		// Simulate form submission
+		try {
+			await new Promise(resolve => setTimeout(resolve, 1500));
+			setSubmitMessage(
+				'Thank you for your message. We will get back to you soon!'
+			);
+			setFormData({
+				name: '',
+				email: '',
+				phone: '',
+				subject: '',
+				message: '',
+			});
+		} catch (error) {
+			setSubmitMessage(
+				'There was an error sending your message. Please try again.'
+			);
+		} finally {
+			setIsSubmitting(false);
+		}
+	};
+
+	return (
+		<div className='min-h-screen bg-white'>
+			{/* Hero Section */}
+			<div className='bg-gray-900 text-white py-16 px-4'>
+				<div className='max-w-7xl mx-auto text-center'>
+					<h1 className='text-4xl md:text-6xl font-bold mb-4'>
+						Contact Us
+					</h1>
+					<p className='text-xl text-gray-300 max-w-2xl mx-auto'>
+						We're here to help and answer any questions you might
+						have. We look forward to hearing from you.
+					</p>
 				</div>
 			</div>
-		</section>
-  );
-}
 
-export default page
+			{/* Contact Methods Grid */}
+			<section className='py-16 px-4 max-w-7xl mx-auto'>
+				<div className='grid md:grid-cols-3 gap-8'>
+					{contactMethods.map((method, index) => {
+						const IconComponent = method.icon;
+						return (
+							<div
+								key={index}
+								className='bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300'>
+								<div className='flex justify-center mb-4'>
+									<IconComponent className='h-12 w-12 text-blue-600' />
+								</div>
+								<h3 className='text-xl font-semibold text-center mb-4'>
+									{method.title}
+								</h3>
+								{method.details.map((detail, idx) => (
+									<p
+										key={idx}
+										className='text-gray-600 text-center mb-2'>
+										{detail}
+									</p>
+								))}
+								<button className='w-full mt-4 px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors duration-300'>
+									{method.actionText}
+								</button>
+							</div>
+						);
+					})}
+				</div>
+			</section>
+
+			{/* Contact Form Section */}
+			<section className='py-16 px-4 bg-gray-50'>
+				<div className='max-w-3xl mx-auto'>
+					<h2 className='text-3xl font-bold text-center mb-8'>
+						Send Us a Message
+					</h2>
+					<form onSubmit={handleSubmit} className='space-y-6'>
+						<div className='grid md:grid-cols-2 gap-6'>
+							<div>
+								<label className='block text-sm font-medium text-gray-700 mb-2'>
+									Your Name
+								</label>
+								<input
+									type='text'
+									name='name'
+									value={formData.name}
+									onChange={handleChange}
+									required
+									className='w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500'
+								/>
+							</div>
+							<div>
+								<label className='block text-sm font-medium text-gray-700 mb-2'>
+									Email Address
+								</label>
+								<input
+									type='email'
+									name='email'
+									value={formData.email}
+									onChange={handleChange}
+									required
+									className='w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500'
+								/>
+							</div>
+						</div>
+						<div className='grid md:grid-cols-2 gap-6'>
+							<div>
+								<label className='block text-sm font-medium text-gray-700 mb-2'>
+									Phone Number
+								</label>
+								<input
+									type='tel'
+									name='phone'
+									value={formData.phone}
+									onChange={handleChange}
+									className='w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500'
+								/>
+							</div>
+							<div>
+								<label className='block text-sm font-medium text-gray-700 mb-2'>
+									Subject
+								</label>
+								<input
+									type='text'
+									name='subject'
+									value={formData.subject}
+									onChange={handleChange}
+									required
+									className='w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500'
+								/>
+							</div>
+						</div>
+						<div>
+							<label className='block text-sm font-medium text-gray-700 mb-2'>
+								Your Message
+							</label>
+							<textarea
+								name='message'
+								value={formData.message}
+								onChange={handleChange}
+								required
+								rows='6'
+								className='w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500'></textarea>
+						</div>
+						<div className='flex justify-center'>
+							<button
+								type='submit'
+								disabled={isSubmitting}
+								className='px-8 py-3 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors duration-300 disabled:opacity-50'>
+								{isSubmitting ? 'Sending...' : 'Send Message'}
+							</button>
+						</div>
+						{submitMessage && (
+							<div
+								className={`text-center p-4 rounded-lg ${
+									submitMessage.includes('error')
+										? 'bg-red-100 text-red-700'
+										: 'bg-green-100 text-green-700'
+								}`}>
+								{submitMessage}
+							</div>
+						)}
+					</form>
+				</div>
+			</section>
+
+			{/* Additional Information */}
+			<section className='py-16 px-4'>
+				<div className='max-w-7xl mx-auto'>
+					<div className='grid md:grid-cols-3 gap-8'>
+						<div className='text-center'>
+							<Clock className='h-8 w-8 mx-auto text-blue-600 mb-4' />
+							<h3 className='text-xl font-semibold mb-2'>
+								Business Hours
+							</h3>
+							<p className='text-gray-600'>
+								Monday - Friday: 9:00 AM - 6:00 PM
+								<br />
+								Saturday: 10:00 AM - 4:00 PM
+								<br />
+								Sunday: Closed
+							</p>
+						</div>
+						<div className='text-center'>
+							<MessageCircle className='h-8 w-8 mx-auto text-blue-600 mb-4' />
+							<h3 className='text-xl font-semibold mb-2'>
+								Live Chat
+							</h3>
+							<p className='text-gray-600'>
+								Available 24/7
+								<br />
+								Average response time: 5 minutes
+							</p>
+						</div>
+						<div className='text-center'>
+							<Globe className='h-8 w-8 mx-auto text-blue-600 mb-4' />
+							<h3 className='text-xl font-semibold mb-2'>
+								International
+							</h3>
+							<p className='text-gray-600'>
+								Global support available
+								<br />
+								Multiple languages supported
+							</p>
+						</div>
+					</div>
+				</div>
+			</section>
+		</div>
+	);
+}
