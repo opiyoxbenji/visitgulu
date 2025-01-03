@@ -23,10 +23,10 @@ const Hero = () => {
 		// Hero Section
 		<section className='w-full  pt-12 sm:pt-16'>
 			<div className='px-4 mx-auto max-w-7xl sm:px-6 lg:px-8 '>
-				
 				<div className='text-center'>
 					<p className='max-w-4xl mx-auto mb-4 text-4xl font-bold leading-tight text-gray-900 sm:leading-tight sm:text-5xl lg:text-6xl lg:leading-tight'>
-						Find your next stay in <span className='text-[#B22222]'>Gulu</span>
+						Find your next stay in{' '}
+						<span className='text-[#B22222]'>Gulu</span>
 					</p>
 					<h1 className='max-w-2xl mx-auto px-6 text-lg text-gray-600 font-inter'>
 						Explore the hidden gems of Northern Uganda. Your
@@ -53,8 +53,6 @@ const Hero = () => {
 			<div>
 				<div className='relative mx-auto mt-4 md:mt-8 px-4 md:px-8 w-full'>
 					<div className='lg:max-w-4xl lg:mx-auto'>
-						
-
 						<FadeCarousel className='w-full h-auto object-cover rounded-lg shadow-lg' />
 					</div>
 				</div>
@@ -62,7 +60,6 @@ const Hero = () => {
 		</section>
 
 		// Landing page
-
 	);
 };
 
