@@ -5,9 +5,9 @@ import Image from 'next/image';
 import { Users, Award, Clock, Globe, Shield, Star } from 'lucide-react';
 
 const stats = [
-	{ id: 1, name: 'Years of Excellence', value: '25+', icon: Clock },
-	{ id: 2, name: 'Luxury Properties', value: '150+', icon: Star },
-	{ id: 3, name: 'Happy Guests', value: '1M+', icon: Users },
+	{ id: 1, name: 'Years of Excellence', value: '1+', icon: Clock },
+	{ id: 2, name: 'Luxury Properties', value: '10+', icon: Star },
+	{ id: 3, name: 'Happy Guests', value: '10k+', icon: Users },
 	{ id: 4, name: 'Countries', value: '45', icon: Globe },
 ];
 
@@ -50,7 +50,7 @@ export default function AboutPage() {
 							Our Story
 						</h1>
 						<p className='text-xl md:text-2xl max-w-2xl mx-auto'>
-							Crafting unforgettable luxury experiences since 1998
+							Crafting unforgettable luxury experiences since 2024
 						</p>
 					</div>
 				</div>
