@@ -50,7 +50,7 @@ export default function HotelList() {
 						className='bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300'>
 						<div className='relative h-64 w-full'>
 							<Image
-								src={hotel.image || '/placeholder-hotel.jpg'} // Fallback to placeholder if image is missing
+								src={hotel.image[0]} // Fallback to placeholder if image is missing
 								alt={hotel.name}
 								fill
 								className='object-cover'

@@ -8,7 +8,7 @@ export default function HotelDetails({ hotel }) {
 			<div className='max-w-4xl mx-auto bg-white rounded-xl shadow-lg overflow-hidden'>
 				<div className='relative h-96 w-full'>
 					<Image
-						src={hotel.image[0]}
+						src={hotel.image[0]} 
 						alt={hotel.name}
 						fill
 						className='object-cover'
