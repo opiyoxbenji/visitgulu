@@ -4,6 +4,7 @@ import React from 'react';
 import {
 	Hotel,
 	Ticket,
+	ArrowUp,
 	MapPin,
 	Globe,
 	Search,
@@ -57,9 +58,8 @@ const Hero = () => {
 					</div>
 				</div>
 			</div>
+			
 		</section>
-
-		// Landing page
 	);
 };
 

@@ -161,7 +161,7 @@ const Navbar = () => {
 
 	const navItems = [
 		{ href: '/', label: 'Home' },
-		{ href: '/services', label: 'Our services' },
+		{ href: '/shop', label: 'Our Shop' },
 		{ href: '/about', label: 'About' },
 		{ href: '/contact', label: 'Contact' },
 	];
@@ -242,7 +242,7 @@ const Navbar = () => {
 								<li key={item.href}>
 									<a
 										href={item.href}
-										className='block px-5 py-3 hover:bg-gray-100 dark:hover:bg-gray-700'>
+										className='block px-5 py-3 hover:bg-gray-100 dark:hover:bg-gray-700 text-white'>
 										{item.label}
 									</a>
 								</li>
