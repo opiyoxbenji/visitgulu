@@ -1,14 +1,15 @@
 'use client';
 
+import HotelFadeCarousel from '@/components/HotelFadeCarousel';
 import Image from 'next/image';
 
 export default function HotelDetails({ hotel }) {
-  return (
+	return (
 		<div className='container mx-auto p-6'>
 			<div className='max-w-4xl mx-auto bg-white rounded-xl shadow-lg overflow-hidden'>
 				<div className='relative h-96 w-full'>
 					<Image
-						src={hotel.image[0]} 
+						src={hotel.image[0]}
 						alt={hotel.name}
 						fill
 						className='object-cover'
@@ -35,10 +36,36 @@ export default function HotelDetails({ hotel }) {
 					</div>
 
 					<div className='mb-6'>
+						<h2 className='text-xl font-semibold mb-2'>Views</h2>
+						<HotelFadeCarousel hotel={hotel} />
+					</div>
+
+					<div className='mb-6'>
 						<h2 className='text-xl font-semibold mb-2'>
 							Description
 						</h2>
 						<p className='text-gray-600'>{hotel.description}</p>
+					</div>
+
+					<div className='mb-6'>
+						<h2 className='text-xl font-semibold mb-2'>Policies</h2>
+						<ul>
+							{Object.entries(hotel.policies).map(
+								([key, value]) => (
+									<li key={key} className='text-gray-600'>
+										<strong>
+											{key
+												.replace(/([A-Z])/g, ' $1')
+												.replace(/^./, str =>
+													str.toUpperCase()
+												)}
+											:
+										</strong>{' '}
+										{value}
+									</li>
+								)
+							)}
+						</ul>
 					</div>
 
 					{hotel.uniqueServices &&
@@ -82,5 +109,5 @@ export default function HotelDetails({ hotel }) {
 				</div>
 			</div>
 		</div>
-  );
+	);
 }

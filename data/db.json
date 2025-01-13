@@ -17,6 +17,13 @@
 			"image": [
 				"https://images.unsplash.com/photo-1725458894508-4fb8bed9a21f?q=80&w=1287&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
 			],
+			"views": [
+				"https://images.unsplash.com/photo-1513694203232-719a280e022f?q=80&w=869&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+				"https://images.unsplash.com/photo-1484101403633-562f891dc89a?q=80&w=874&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+				"https://images.unsplash.com/photo-1679310289994-9033a196b136?q=80&w=1074&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+				"https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+				"https://images.unsplash.com/photo-1505409628601-edc9af17fda6?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+			],
 			"description": "An opulent beachfront resort featuring stunning Arabian architecture and spectacular views of the Persian Gulf. Each room offers a private balcony and luxury amenities.",
 			"uniqueServices": [
 				"Underwater restaurant with 180-degree aquarium views",
@@ -30,6 +37,15 @@
 				"Private beach",
 				"Fitness center"
 			],
+			"policies": {
+				"checkIn": "3:00 PM",
+				"checkOut": "12:00 PM",
+				"cancellation": "Free cancellation up to 48 hours before check-in. 50% charge for cancellations within 48 hours.",
+				"petPolicy": "No pets allowed.",
+				"childrenPolicy": "Children under 12 stay free with accompanying adults.",
+				"smokingPolicy": "Smoking is prohibited in all rooms. Designated smoking areas are available.",
+				"additionalRules": "Dress code applies for dining in the underwater restaurant."
+			},
 			"rooms": {
 				"total": 400,
 				"types": [
@@ -61,8 +77,8 @@
 			"rating": 5,
 			"priceRange": "$$$$",
 			"image": [
-        "https://images.unsplash.com/photo-1718606267789-de728d02f064?q=80&w=1009&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-      ],
+				"https://images.unsplash.com/photo-1718606267789-de728d02f064?q=80&w=1009&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+			],
 			"description": "A luxurious mountain retreat offering world-class skiing facilities and breathtaking views of the Rockies. Features rustic-chic decor with modern amenities.",
 			"uniqueServices": [
 				"Private ski instructor and gear fitting",
@@ -106,7 +122,9 @@
 			},
 			"rating": 4,
 			"priceRange": "$$$",
-			"image": ["https://images.unsplash.com/photo-1581041778541-1ac1b92728a4?w=300&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OTh8fGNvc3RhJTIwcmljYXxlbnwwfHwwfHx8MA%3D%3D"],
+			"image": [
+				"https://images.unsplash.com/photo-1581041778541-1ac1b92728a4?w=300&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OTh8fGNvc3RhJTIwcmljYXxlbnwwfHwwfHx8MA%3D%3D"
+			],
 			"description": "An eco-friendly paradise nestled in the rainforest canopy, offering sustainable luxury and unique wildlife experiences. Each treehouse suite is crafted from local materials.",
 			"uniqueServices": [
 				"Canopy wildlife observation platforms",
@@ -150,7 +168,9 @@
 			},
 			"rating": 5,
 			"priceRange": "$$$$",
-			"image": ["https://images.unsplash.com/photo-1544550581-1bb7e9a211e6?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"],
+			"image": [
+				"https://images.unsplash.com/photo-1544550581-1bb7e9a211e6?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+			],
 			"description": "Luxurious overwater villas with glass floors, offering direct access to pristine coral reefs and turquoise waters.",
 			"amenities": [
 				"Water sports",
@@ -189,7 +209,9 @@
 			},
 			"rating": 4,
 			"priceRange": "$$$",
-			"image": ["https://images.unsplash.com/photo-1541717141198-78d0af021490?q=80&w=987&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"],
+			"image": [
+				"https://images.unsplash.com/photo-1541717141198-78d0af021490?q=80&w=987&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+			],
 			"description": "Modern luxury hotel in the heart of Manhattan, offering stunning city views and sophisticated urban comfort.",
 			"amenities": [
 				"Restaurant",
@@ -228,7 +250,9 @@
 			},
 			"rating": 4,
 			"priceRange": "$$$",
-			"image": ["https://images.unsplash.com/photo-1538600838042-6a0c694ffab5?q=80&w=1035&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"],
+			"image": [
+				"https://images.unsplash.com/photo-1538600838042-6a0c694ffab5?q=80&w=1035&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+			],
 			"description": "Traditional Moroccan riad with modern amenities, featuring authentic architecture and a peaceful courtyard garden.",
 			"amenities": [
 				"Hammam",
@@ -267,7 +291,9 @@
 			},
 			"rating": 4,
 			"priceRange": "$$$",
-			"image": ["https://images.unsplash.com/photo-1616091216791-a5360b5fc78a?q=80&w=995&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"],
+			"image": [
+				"https://images.unsplash.com/photo-1616091216791-a5360b5fc78a?q=80&w=995&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+			],
 			"description": "Charming château surrounded by vineyards, offering wine tasting experiences and gourmet cuisine.",
 			"amenities": [
 				"Wine cellar",
@@ -307,8 +333,8 @@
 			"rating": 4,
 			"priceRange": "$$$$",
 			"image": [
-        "https://plus.unsplash.com/premium_photo-1698405316329-fd9c43d7e11c?q=80&w=987&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-      ],
+				"https://plus.unsplash.com/premium_photo-1698405316329-fd9c43d7e11c?q=80&w=987&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+			],
 			"description": "Glass-roofed igloo hotel offering perfect views of the Northern Lights and Arctic wilderness.",
 			"amenities": [
 				"Glass igloos",
@@ -347,7 +373,9 @@
 			},
 			"rating": 5,
 			"priceRange": "$$$$",
-			"image": ["https://plus.unsplash.com/premium_photo-1677829177639-28be8d494543?q=80&w=987&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"],
+			"image": [
+				"https://plus.unsplash.com/premium_photo-1677829177639-28be8d494543?q=80&w=987&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+			],
 			"description": "Luxury beachfront resort with traditional Balinese architecture and world-class spa facilities.",
 			"amenities": [
 				"Private beach",
@@ -386,7 +414,9 @@
 			},
 			"rating": 5,
 			"priceRange": "$$$$",
-			"image": ["https://images.unsplash.com/photo-1559245718-212fba2d22e2?q=80&w=987&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"],
+			"image": [
+				"https://images.unsplash.com/photo-1559245718-212fba2d22e2?q=80&w=987&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+			],
 			"description": "Ultra-modern high-rise hotel with cutting-edge technology and spectacular city views.",
 			"amenities": [
 				"Rooftop bar",
@@ -425,7 +455,9 @@
 			},
 			"rating": 4,
 			"priceRange": "$$$",
-			"image": ["https://images.unsplash.com/photo-1536140012599-830a641c27e6?q=80&w=1035&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"],
+			"image": [
+				"https://images.unsplash.com/photo-1536140012599-830a641c27e6?q=80&w=1035&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+			],
 			"description": "Converted 16th-century palazzo in the heart of Rome, combining historical elegance with modern comfort.",
 			"amenities": [
 				"Rooftop restaurant",
@@ -464,7 +496,9 @@
 			},
 			"rating": 5,
 			"priceRange": "$$$$",
-			"image": ["https://images.unsplash.com/photo-1553342385-111fd6bc6ab3?q=80&w=1035&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"],
+			"image": [
+				"https://images.unsplash.com/photo-1553342385-111fd6bc6ab3?q=80&w=1035&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+			],
 			"description": "Elegant lakeside hotel with private dock and stunning mountain views, set in historic gardens.",
 			"amenities": [
 				"Lake access",
@@ -503,7 +537,9 @@
 			},
 			"rating": 5,
 			"priceRange": "$$$$",
-			"image": ["https://images.unsplash.com/photo-1503427948460-3ca3eb79c566?q=80&w=987&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"],
+			"image": [
+				"https://images.unsplash.com/photo-1503427948460-3ca3eb79c566?q=80&w=987&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+			],
 			"description": "Luxury tented camp offering intimate wildlife experiences and premium safari services.",
 			"amenities": [
 				"Game drives",
@@ -542,7 +578,9 @@
 			},
 			"rating": 5,
 			"priceRange": "$$$$",
-			"image": ["https://images.unsplash.com/photo-1505230960573-7dbc536e8346?q=80&w=1064&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"],
+			"image": [
+				"https://images.unsplash.com/photo-1505230960573-7dbc536e8346?q=80&w=1064&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+			],
 			"description": "Sleek luxury hotel occupying the top floors of a iconic skyscraper with panoramic city views.",
 			"amenities": [
 				"Bar",
