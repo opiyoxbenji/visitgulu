@@ -11,6 +11,7 @@ import {
 	AlertCircle,
 	Check,
 } from 'lucide-react';
+import { useRouter } from 'next/navigation';
 
 const Signup = () => {
 	const [firstName, setFirstName] = useState('');
@@ -29,6 +30,8 @@ const Signup = () => {
 		general: '',
 	});
 	const [isSubmitting, setIsSubmitting] = useState(false);
+
+	const router = useRouter();
 
 	// console.log("Name: ", firstName, lastName);
 
@@ -88,6 +91,27 @@ const Signup = () => {
 		// Submission Logic
 		setIsSubmitting(true);
 		try {
+			// If the user exists
+			const resUserExists = await fetch('/api/userExists', {
+				method: 'POST',
+				headers: {
+					'Content-Type': 'application/json',
+				},
+				body: JSON.stringify({
+					email,
+				}),
+			});
+
+			const { user } = await resUserExists.json();
+			if (user) {
+				setErrors('User already exists. Please log in.');
+
+				alert('Account already exists. Please log in.');
+
+				setIsSubmitting(false);
+				return;
+			}
+
 			const res = await fetch('/api/register', {
 				method: 'POST',
 				headers: {
@@ -102,17 +126,17 @@ const Signup = () => {
 			});
 
 			if (res.ok) {
+				const form = e.target;
+				form.reset();
+				router.push('/login');
 				// Clear all form fields
 				setFirstName('');
 				setLastName('');
 				setEmail('');
 				setPassword('');
 				setConfirmPassword('');
-
-				// Optional: Show success message
+				// Show success message => TO BE REPLACED WITH TOASTIFY
 				alert('Account created successfully!');
-				// Or use a more elegant notification system
-
 				// Reset form submission state
 				setIsSubmitting(false);
 			} else {
@@ -135,8 +159,6 @@ const Signup = () => {
 			setIsSubmitting(false);
 		}
 	};
-
-	
 
 	return (
 		<div className='flex justify-center items-center h-screen p-1'>
