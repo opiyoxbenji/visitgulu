@@ -7,7 +7,7 @@
 // 	TicketCheck,
 // 	MapPin,
 // 	User,
-// 	Menu,
+// 	Menu, 
 // 	X,
 // 	Globe,
 // 	PenLine,
@@ -249,7 +249,7 @@ const Navbar = () => {
 							))}
 							<div className='border-t dark:border-gray-700 py-3 px-5 flex flex-col space-y-2'>
 								<button
-									onClick={() => handleNavigation('/signup')}
+									onClick={() => handleNavigation('/sign-up')}
 									className='text-black dark:text-white'>
 									Sign up
 								</button>

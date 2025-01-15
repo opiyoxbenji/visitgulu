@@ -30,6 +30,8 @@ const Signup = () => {
 	});
 	const [isSubmitting, setIsSubmitting] = useState(false);
 
+	// console.log("Name: ", firstName, lastName);
+
 	const validateEmail = email => {
 		const re = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 		return re.test(String(email).toLowerCase());
@@ -87,24 +89,27 @@ const Signup = () => {
 		setIsSubmitting(true);
 		try {
 			// Fake signup logic!!!!!!!!![TO BE REPLACED]
-			const response = await simulateSignup(
-				firstName,
-				lastName,
-				email,
-				password
-			);
+			const res = await fetch('api/register', {
+				method: 'POST',
+				headers: {
+					'Content-Type': 'application/json',
+				},
+				body: JSON.stringify({
+					firstName,
+					lastName,
+					email,
+					password,
+				}),
+			});
 
-			if (response.success) {
-				// Handle successful Signup
-				console.log('Signup successful');
-				// Redirect or show success message
+			if (res.ok) {
+				const form = e.target;
+				form.reset();
 			} else {
-				setErrors({ general: response.message || 'Signup failed' });
+				console.log('USer registration failed.');
 			}
 		} catch (error) {
-			setErrors({ general: 'An unexpected error occurred' });
-		} finally {
-			setIsSubmitting(false);
+			console.log('Error during registration', error);
 		}
 	};
 
