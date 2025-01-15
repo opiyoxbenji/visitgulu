@@ -2,9 +2,9 @@
 
 import Link from 'next/link';
 import { useState } from 'react';
-import Image from 'next/image';
-import { FaGoogle } from 'react-icons/fa';
 import { Eye, EyeOff, Lock, Mail, AlertCircle, Check } from 'lucide-react';
+import { signIn } from 'next-auth/react';
+import { useRouter } from 'next/navigation';
 
 const Login = () => {
 	const [email, setEmail] = useState('');
@@ -16,6 +16,8 @@ const Login = () => {
 		general: '',
 	});
 	const [isSubmitting, setIsSubmitting] = useState(false);
+
+	const router = useRouter();
 
 	const validateEmail = email => {
 		const re = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
@@ -52,19 +54,19 @@ const Login = () => {
 		// Submisstion Logic
 		setIsSubmitting(true);
 		try {
-			// FAke login logic!!!!!!!!![TO BE REPLACED]
-			const response = await simulateLogin(email, password);
+			const res = await signIn('credentials', {
+				email,
+				password,
+				redirect: false,
+			});
 
-			if (response.success) {
-				// Handle successfull Login
-				console.log('Login successful');
-			} else {
-				setErrors({ general: response.message || 'Login failed' });
+			if (res.error) {
+				setErrors('Invalid Credentials');
+				return;
 			}
+			router.replace('dashboard');
 		} catch (error) {
-			setErrors({ general: 'An unexpected error occured' });
-		} finally {
-			setIsSubmitting(false);
+			console.log(error);
 		}
 	};
 
