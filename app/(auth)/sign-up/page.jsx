@@ -88,8 +88,7 @@ const Signup = () => {
 		// Submission Logic
 		setIsSubmitting(true);
 		try {
-			// Fake signup logic!!!!!!!!![TO BE REPLACED]
-			const res = await fetch('api/register', {
+			const res = await fetch('/api/register', {
 				method: 'POST',
 				headers: {
 					'Content-Type': 'application/json',
@@ -103,32 +102,41 @@ const Signup = () => {
 			});
 
 			if (res.ok) {
-				const form = e.target;
-				form.reset();
+				// Clear all form fields
+				setFirstName('');
+				setLastName('');
+				setEmail('');
+				setPassword('');
+				setConfirmPassword('');
+
+				// Optional: Show success message
+				alert('Account created successfully!');
+				// Or use a more elegant notification system
+
+				// Reset form submission state
+				setIsSubmitting(false);
 			} else {
-				console.log('USer registration failed.');
+				// Handle error response
+				const data = await res.json();
+				setErrors({
+					...errors,
+					general:
+						data.message ||
+						'Registration failed. Please try again.',
+				});
+				setIsSubmitting(false);
 			}
 		} catch (error) {
-			console.log('Error during registration', error);
+			console.error('Error during registration:', error);
+			setErrors({
+				...errors,
+				general: 'An error occurred. Please try again later.',
+			});
+			setIsSubmitting(false);
 		}
 	};
 
-	// Simulate signup (replace with actual authentication)
-	const simulateSignup = async (firstName, lastName, email, password) => {
-		return new Promise(resolve => {
-			setTimeout(() => {
-				// Simulated validation
-				if (email && password && firstName && lastName) {
-					resolve({ success: true });
-				} else {
-					resolve({
-						success: false,
-						message: 'Signup failed. Please check your details.',
-					});
-				}
-			}, 1500);
-		});
-	};
+	
 
 	return (
 		<div className='flex justify-center items-center h-screen p-1'>
