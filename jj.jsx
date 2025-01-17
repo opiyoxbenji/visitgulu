@@ -2,23 +2,23 @@
 
 import HotelFadeCarousel from '@/components/HotelFadeCarousel';
 import Image from 'next/image';
-import { MapPin, DollarSign, Star } from 'lucide-react';
+import { MapPin, DollarSign, Star } from 'lucide-react'; // Added icons for better UI
 
 export default function HotelDetails({ hotel }) {
-	// function to format price range
+	// Helper function to format price range
 	const formatPriceRange = range => range.length;
 
-	// function for format coordinates
+	// Helper function to format coordinates
 	const formatCoordinates = coords => {
 		return `${coords.latitude.toFixed(4)}, ${coords.longitude.toFixed(4)}`;
 	};
 
 	return (
-		<div className='container mx-auto p-6'>
+		<div className='container mx-auto p-4 sm:p-6'>
 			{/* Main container with responsive padding */}
 			<div className='max-w-5xl mx-auto bg-white rounded-xl shadow-lg overflow-hidden'>
-				{/* main image */}
-				<div className='relative h-96 w-full'>
+				{/* Hero section with main image */}
+				<div className='relative h-64 sm:h-96 w-full'>
 					<Image
 						src={hotel.image[0]}
 						alt={hotel.name}
@@ -26,7 +26,7 @@ export default function HotelDetails({ hotel }) {
 						className='object-cover'
 						priority
 					/>
-					{/* Price range overlay */}
+					{/* Added price range overlay */}
 					<div className='absolute top-4 right-4 bg-white/90 px-3 py-1 rounded-full'>
 						<span className='text-green-700 font-semibold'>
 							{'$'.repeat(formatPriceRange(hotel.priceRange))}
@@ -35,25 +35,27 @@ export default function HotelDetails({ hotel }) {
 				</div>
 
 				<div className='p-4 sm:p-8'>
-					<div className='flex flex-col sm:flex-row justify-between items-start mb-6 sm:items-center gap-4'>
-						<h1 className='text-3xl font-bold text-gray-800'>
+					{/* Header section with responsive layout */}
+					<div className='flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4 mb-6'>
+						<h1 className='text-2xl sm:text-3xl font-bold text-gray-800'>
 							{hotel.name}
 						</h1>
 						<div className='flex items-center gap-2'>
-							<span className='px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-lg'>
-								{hotel.rating} ★
+							<span className='px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-lg flex items-center gap-1'>
+								<Star className='w-5 h-5' />
+								{hotel.rating}
 							</span>
 						</div>
 					</div>
 
-					{/* location section with coordinates */}
-					<div className='mb-6'>
+					{/* Location section with coordinates */}
+					<div className='mb-8'>
 						<h2 className='text-xl font-semibold mb-2 flex items-center gap-2'>
 							<MapPin className='w-5 h-5' />
 							Location
 						</h2>
 						<div className='text-gray-600 space-y-1'>
-							<p className='text-gray-600'>
+							<p>
 								{hotel.location.address}, {hotel.location.city},{' '}
 								{hotel.location.country}
 							</p>
@@ -64,21 +66,21 @@ export default function HotelDetails({ hotel }) {
 						</div>
 					</div>
 
-					{/* carousel */}
+					{/* Views carousel */}
 					<div className='mb-8'>
 						<h2 className='text-xl font-semibold mb-2'>Views</h2>
 						<HotelFadeCarousel hotel={hotel} />
 					</div>
 
-					{/* description */}
-					<div className='mb-6'>
+					{/* Description */}
+					<div className='mb-8'>
 						<h2 className='text-xl font-semibold mb-2'>
 							Description
 						</h2>
 						<p className='text-gray-600'>{hotel.description}</p>
 					</div>
 
-					{/* Added amenities section */}
+					{/* Added Amenities section */}
 					<div className='mb-8'>
 						<h2 className='text-xl font-semibold mb-2'>
 							Amenities
@@ -94,7 +96,7 @@ export default function HotelDetails({ hotel }) {
 						</div>
 					</div>
 
-					{/* Policies */}
+					{/* Policies with improved layout */}
 					<div className='mb-8'>
 						<h2 className='text-xl font-semibold mb-2'>Policies</h2>
 						<div className='grid sm:grid-cols-2 gap-4'>
@@ -119,23 +121,7 @@ export default function HotelDetails({ hotel }) {
 						</div>
 					</div>
 
-					{hotel.uniqueServices &&
-						hotel.uniqueServices.length > 0 && (
-							<div className='mb-6'>
-								<h2 className='text-xl font-semibold mb-2'>
-									Unique Services
-								</h2>
-								<ul className='list-disc list-inside text-gray-600'>
-									{hotel.uniqueServices.map(
-										(service, index) => (
-											<li key={index}>{service}</li>
-										)
-									)}
-								</ul>
-							</div>
-						)}
-
-					{/* Room typess */}
+					{/* Room Types with enhanced cards */}
 					<div className='mb-6'>
 						<h2 className='text-xl font-semibold mb-2'>
 							Room Types
