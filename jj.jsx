@@ -1,152 +1,110 @@
-'use client';
+import { signOut, useSession } from 'next-auth/react';
+import { User, Mail, LogOut, Settings, Bell, Shield, Key } from 'lucide-react';
 
-import HotelFadeCarousel from '@/components/HotelFadeCarousel';
-import Image from 'next/image';
-import { MapPin, DollarSign, Star } from 'lucide-react'; // Added icons for better UI
+export default function UserInfo() {
+	const { data: session } = useSession();
 
-export default function HotelDetails({ hotel }) {
-	// Helper function to format price range
-	const formatPriceRange = range => range.length;
-
-	// Helper function to format coordinates
-	const formatCoordinates = coords => {
-		return `${coords.latitude.toFixed(4)}, ${coords.longitude.toFixed(4)}`;
+	const handleSignout = async () => {
+		await signOut({
+			callbackUrl: '/login',
+			redirect: true,
+		});
 	};
 
 	return (
-		<div className='container mx-auto p-4 sm:p-6'>
-			{/* Main container with responsive padding */}
-			<div className='max-w-5xl mx-auto bg-white rounded-xl shadow-lg overflow-hidden'>
-				{/* Hero section with main image */}
-				<div className='relative h-64 sm:h-96 w-full'>
-					<Image
-						src={hotel.image[0]}
-						alt={hotel.name}
-						fill
-						className='object-cover'
-						priority
-					/>
-					{/* Added price range overlay */}
-					<div className='absolute top-4 right-4 bg-white/90 px-3 py-1 rounded-full'>
-						<span className='text-green-700 font-semibold'>
-							{'$'.repeat(formatPriceRange(hotel.priceRange))}
-						</span>
+		<div className='min-h-screen bg-gradient-to-b from-gray-50 to-gray-100 p-4 md:p-8'>
+			<div className='max-w-4xl mx-auto'>
+				{/* Header Section */}
+				<div className='bg-white rounded-lg shadow-md p-6 mb-6'>
+					<div className='flex flex-col md:flex-row md:items-center md:justify-between'>
+						<div className='mb-4 md:mb-0'>
+							<h1 className='text-2xl font-bold text-gray-800'>
+								Welcome back,{' '}
+								{session?.user?.firstName || 'User'}
+							</h1>
+							<p className='text-gray-600 mt-1'>
+								Manage your account settings and preferences
+							</p>
+						</div>
+						<button
+							onClick={handleSignout}
+							className='flex items-center justify-center bg-red-500 hover:bg-red-600 text-white font-semibold px-4 py-2 rounded-lg transition-colors'>
+							<LogOut className='w-4 h-4 mr-2' />
+							Sign Out
+						</button>
 					</div>
 				</div>
 
-				<div className='p-4 sm:p-8'>
-					{/* Header section with responsive layout */}
-					<div className='flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4 mb-6'>
-						<h1 className='text-2xl sm:text-3xl font-bold text-gray-800'>
-							{hotel.name}
-						</h1>
-						<div className='flex items-center gap-2'>
-							<span className='px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-lg flex items-center gap-1'>
-								<Star className='w-5 h-5' />
-								{hotel.rating}
-							</span>
+				{/* Main Content Grid */}
+				<div className='grid grid-cols-1 md:grid-cols-2 gap-6'>
+					{/* Profile Information Card */}
+					<div className='bg-white rounded-lg shadow-md p-6'>
+						<h2 className='text-lg font-semibold text-gray-800 mb-4 flex items-center'>
+							<User className='w-5 h-5 mr-2 text-blue-500' />
+							Profile Information
+						</h2>
+						<div className='space-y-4'>
+							<div className='flex items-center space-x-2 p-3 bg-gray-50 rounded-md'>
+								<User className='w-4 h-4 text-gray-500' />
+								<span className='text-gray-600'>Name:</span>
+								<span className='font-semibold text-gray-800'>
+									{session?.user?.firstName}
+								</span>
+							</div>
+							<div className='flex items-center space-x-2 p-3 bg-gray-50 rounded-md'>
+								<Mail className='w-4 h-4 text-gray-500' />
+								<span className='text-gray-600'>Email:</span>
+								<span className='font-semibold text-gray-800'>
+									{session?.user?.email}
+								</span>
+							</div>
 						</div>
 					</div>
 
-					{/* Location section with coordinates */}
-					<div className='mb-8'>
-						<h2 className='text-xl font-semibold mb-2 flex items-center gap-2'>
-							<MapPin className='w-5 h-5' />
-							Location
+					{/* Quick Actions Card */}
+					<div className='bg-white rounded-lg shadow-md p-6'>
+						<h2 className='text-lg font-semibold text-gray-800 mb-4 flex items-center'>
+							<Settings className='w-5 h-5 mr-2 text-blue-500' />
+							Quick Actions
 						</h2>
-						<div className='text-gray-600 space-y-1'>
-							<p>
-								{hotel.location.address}, {hotel.location.city},{' '}
-								{hotel.location.country}
-							</p>
-							<p className='text-sm'>
-								Coordinates:{' '}
-								{formatCoordinates(hotel.location.coordinates)}
-							</p>
+						<div className='space-y-3'>
+							<button className='w-full flex items-center p-3 text-left text-gray-700 hover:bg-gray-50 rounded-md transition-colors'>
+								<Shield className='w-4 h-4 mr-3 text-gray-500' />
+								Privacy Settings
+							</button>
+							<button className='w-full flex items-center p-3 text-left text-gray-700 hover:bg-gray-50 rounded-md transition-colors'>
+								<Bell className='w-4 h-4 mr-3 text-gray-500' />
+								Notification Preferences
+							</button>
+							<button className='w-full flex items-center p-3 text-left text-gray-700 hover:bg-gray-50 rounded-md transition-colors'>
+								<Key className='w-4 h-4 mr-3 text-gray-500' />
+								Change Password
+							</button>
 						</div>
 					</div>
+				</div>
 
-					{/* Views carousel */}
-					<div className='mb-8'>
-						<h2 className='text-xl font-semibold mb-2'>Views</h2>
-						<HotelFadeCarousel hotel={hotel} />
-					</div>
-
-					{/* Description */}
-					<div className='mb-8'>
-						<h2 className='text-xl font-semibold mb-2'>
-							Description
-						</h2>
-						<p className='text-gray-600'>{hotel.description}</p>
-					</div>
-
-					{/* Added Amenities section */}
-					<div className='mb-8'>
-						<h2 className='text-xl font-semibold mb-2'>
-							Amenities
-						</h2>
-						<div className='grid grid-cols-2 md:grid-cols-3 gap-3'>
-							{hotel.amenities.map((amenity, index) => (
-								<div
-									key={index}
-									className='bg-gray-50 rounded-lg p-3 text-gray-700'>
-									{amenity}
+				{/* Activity Section */}
+				<div className='mt-6 bg-white rounded-lg shadow-md p-6'>
+					<h2 className='text-lg font-semibold text-gray-800 mb-4'>
+						Recent Activity
+					</h2>
+					<div className='space-y-3'>
+						{[1, 2, 3].map((_, index) => (
+							<div
+								key={index}
+								className='flex items-center justify-between p-3 bg-gray-50 rounded-md'>
+								<div className='flex items-center space-x-3'>
+									<div className='w-2 h-2 bg-blue-500 rounded-full'></div>
+									<span className='text-gray-600'>
+										Last login from Chrome on Windows
+									</span>
 								</div>
-							))}
-						</div>
-					</div>
-
-					{/* Policies with improved layout */}
-					<div className='mb-8'>
-						<h2 className='text-xl font-semibold mb-2'>Policies</h2>
-						<div className='grid sm:grid-cols-2 gap-4'>
-							{Object.entries(hotel.policies).map(
-								([key, value]) => (
-									<div
-										key={key}
-										className='bg-gray-50 rounded-lg p-4'>
-										<h3 className='font-semibold text-gray-800 mb-1'>
-											{key
-												.replace(/([A-Z])/g, ' $1')
-												.replace(/^./, str =>
-													str.toUpperCase()
-												)}
-										</h3>
-										<p className='text-gray-600 text-sm'>
-											{value}
-										</p>
-									</div>
-								)
-							)}
-						</div>
-					</div>
-
-					{/* Room Types with enhanced cards */}
-					<div className='mb-6'>
-						<h2 className='text-xl font-semibold mb-2'>
-							Room Types
-							<span className='text-sm font-normal text-gray-500 ml-2'>
-								(Total rooms: {hotel.rooms.total})
-							</span>
-						</h2>
-						<div className='grid sm:grid-cols-2 gap-4'>
-							{hotel.rooms.types.map((room, index) => (
-								<div
-									key={index}
-									className='border rounded-lg p-4 hover:shadow-md transition-shadow'>
-									<h3 className='font-semibold text-lg'>
-										{room.name}
-									</h3>
-									<p className='text-gray-600'>
-										Size: {room.size}
-									</p>
-									<p className='text-blue-600 font-medium mt-2 flex items-center gap-1'>
-										<DollarSign className='w-4 h-4' />
-										{room.pricePerNight} per night
-									</p>
-								</div>
-							))}
-						</div>
+								<span className='text-sm text-gray-500'>
+									2 hours ago
+								</span>
+							</div>
+						))}
 					</div>
 				</div>
 			</div>

@@ -43,3 +43,5 @@ next-env.d.ts
 
 # auto-git push
 git
+
+jj.jsx
